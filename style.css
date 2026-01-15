@@ -17,8 +17,8 @@ body {
 }
 
 .game-iframe {
-  width: 300%; /* Makes it responsive to the parent container's width */
-  height: 700px; /* Adjust height as desired */
+  width: 100%; /* Makes it responsive to the parent container's width */
+  height: 200px; /* Adjust height as desired */
   border: none;
 }
 
