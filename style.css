@@ -70,11 +70,11 @@ body {
    CARDS
 ========================= */
 .resource-card {
-  background-color: rgba(28, 31, 47, 0.95);
+  background-color: rgba(119, 140, 255, 0.95);
   margin: 2em auto;
   padding: 1.5em;
   border-radius: 12px;
-  box-shadow: 0 0 12px rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 12px rgba(96, 112, 255, 0.08);
 }
 
 /* =========================
