@@ -28,7 +28,7 @@ body {
    NAVBAR
 ========================= */
 .navbar {
-  background-color: #1b1d3a;
+  background-color: #2d3bff;
   padding: 1em 2em;
   display: flex;
   justify-content: space-between;
@@ -102,7 +102,7 @@ body {
 .bio-text h4 {
   margin-top: 0;
   font-weight: normal;
-  color: #ccccff;
+  color: #f2ff00;
 }
 
 /* =========================
@@ -125,14 +125,14 @@ body {
 
 .reflection {
   flex: 1;
-  background-color: rgba(255, 255, 255, 0.04);
+  background-color: rgba(4, 0, 255, 0.04);
   padding: 1em;
   border-radius: 8px;
 }
 
 .reflection h3 {
   margin-top: 0;
-  color: #aaaaff;
+  color: #e5ff00;
 }
 
 .reflection p {
