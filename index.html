@@ -1,199 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>SolidGround</title>
+  <!-- Update these (from Curator Guide) -->
+  <meta name="description" content="Junior Fall Portfolio for Elyssa Burrell" />
+  <meta name="keywords" content="portfolio, junior, projects, programming, web development" />
+  <meta name="author" content="Elyssa Burrell" />
 
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Elyssa Burrell | Junior Fall Portfolio</title>
 
-  <style>
-    body {
-      background-color: #f4f8fc;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css" />
 
-    /* NAVBAR */
-    .custom-navbar {
-      background-color: white;
-      padding: 15px 30px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-      margin-bottom: 30px;
-    }
+  <!-- Optional favicon (put your icon file in the same folder) -->
+  <link rel="icon" type="image/x-icon" href="favicon.png" />
 
-    .navbar-left img {
-      height: 55px;
-      width: auto;
-    }
-
-    .navbar-right {
-      list-style: none;
-      display: flex;
-      gap: 25px;
-      margin: 0;
-      padding: 0;
-    }
-
-    .navbar-right a {
-      text-decoration: none;
-      color: #4a7fcf;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-
-    .navbar-right a:hover {
-      color: #1e4e94;
-    }
-
-    /* HERO SECTION */
-    .hero {
-      background: linear-gradient(135deg, #6ea8fe, #4a7fcf);
-      color: white;
-      padding: 60px 20px;
-      border-radius: 20px;
-      margin-bottom: 40px;
-    }
-
-    /* CONTENT SECTIONS */
-    .section {
-      background: white;
-      padding: 30px;
-      border-radius: 15px;
-      margin-bottom: 25px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-    }
-
-    h3 {
-      color: #4a7fcf;
-      margin-bottom: 15px;
-    }
-
-    iframe,
-    video {
-      border-radius: 12px;
-    }
-
-    /* MOBILE RESPONSIVE */
-    @media (max-width: 768px) {
-      .custom-navbar {
-        flex-direction: column;
-        gap: 15px;
-      }
-
-      .navbar-right {
-        flex-wrap: wrap;
-        justify-content: center;
-      }
-    }
-  </style>
+  <!-- Optional fonts (only keep if your CSS uses them) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet" />
 </head>
 
 <body>
 
   <!-- NAVBAR -->
   <header>
-    <nav class="custom-navbar">
-
+    <nav class="navbar">
       <div class="navbar-left">
-        <!-- Replace logo.png with your actual logo -->
-        <img src="logo.png" alt="SolidGround Logo">
+        <!-- Replace logo.png with your own image file -->
+        <img src="trnsparent.jpeg" alt="Logo" />
       </div>
 
       <ul class="navbar-right">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="project.html">Main Project</a></li>
-        <li><a href="cfus.html">CFUS</a></li>
-        <li><a href="labs.html">Labs</a></li>
-        <li><a href="contact.html">Contacts</a></li>
+        <li><a href="index.html">𝐻𝑜𝓂𝑒</a></li>
+        <li><a href="https://py3.codeskulptor.org/#user311_vgYqHQF16SV1eTS.py">𝑀𝒶𝒾𝓃 𝒫𝓇𝑜𝒿𝑒𝒸𝓉</a></li>
+        <li><a href="https://py3.codeskulptor.org/#user311_JzRQ9CcITRSK33L_0.py">𝒞𝐹𝒰𝒮</a></li>
+        <li><a href="labs.html">𝐿𝒶𝒷𝓈</a></li>
+        <li><a href="'''">𝒞𝑜𝓃𝓉𝒶𝒸𝓉𝓈</a></li>
       </ul>
-
     </nav>
   </header>
 
   <!-- MAIN CONTENT -->
-  <div class="container text-center">
+  <main class="home-card">
 
-    <!-- HERO -->
-    <div class="hero">
-      <h1>🌟 SOLIDGROUND</h1>
-      <p><em>"See your future before inflation changes it."</em></p>
-    </div>
+    <!-- ABOUT / BIO CARD -->
+    <section class="resource-card">
+      <div class="bio">
+        <div class="bio-pic">
+          <!-- Replace profile.jpg with your own image file -->
+          <img src="profile.jpg" alt="Your Photo" />
+        </div>
 
-    <!-- PITCH -->
-    <div class="section">
-      <h3>🎯 Pitch</h3>
-      <p>
-        SolidGround helps users understand how inflation affects their spending,
-        savings, and future finances through budgeting tools and personalized predictions.
-      </p>
-    </div>
+        <div class="bio-text">
+          <h1>⋆ 🎀  𝐸𝓁𝓎𝓈𝓈𝒶 𝐵𝓊𝓇𝓇𝑒𝓁𝓁  🎀 ⋆</h1>
+          <h3>𝑻𝒉𝒐𝒎𝒂𝒔 𝑨. 𝑬𝒅𝒊𝒔𝒐𝒏 𝑪𝒂𝒓𝒆𝒆𝒓 𝒂𝒏𝒅 𝑻𝒆𝒄𝒉𝒏𝒊𝒄𝒂𝒍 𝑬𝒅𝒖𝒄𝒂𝒕𝒊𝒐𝒏 𝑯𝒊𝒈𝒉 𝑺𝒄𝒉𝒐𝒐𝒍</h3>
+          <h2>
+            𝕄𝕪 𝕡𝕠𝕣𝕥𝕗𝕠𝕝𝕚𝕠 𝕤𝕙𝕠𝕨𝕤 𝕞𝕪 𝕦𝕟𝕕𝕖𝕣𝕤𝕥𝕒𝕟𝕕𝕚𝕟𝕘 𝕠𝕗 𝕡𝕪𝕥𝕙𝕠𝕟, 𝕒𝕝𝕤𝕠 𝕕𝕖𝕞𝕠𝕟𝕤𝕥𝕣𝕒𝕥𝕚𝕟𝕘 𝕞𝕪 𝕦𝕟𝕕𝕖𝕣𝕤𝕥𝕒𝕟𝕕𝕚𝕟𝕘 𝕠𝕗 𝕙𝕥𝕞𝕝 𝕔𝕠𝕕𝕖.
+            𝕋𝕙𝕚𝕤 𝕕𝕖𝕞𝕠𝕟𝕤𝕥𝕣𝕒𝕥𝕖𝕤 𝕙𝕒𝕟𝕕𝕝𝕚𝕟𝕘 𝕦𝕤𝕖𝕣𝕤 𝕚𝕟𝕡𝕦𝕥 𝕒𝕟𝕕 𝕡𝕣𝕠𝕘𝕣𝕒𝕞𝕞𝕚𝕟𝕘 𝕝𝕠𝕘𝕚𝕔.
+          </h2>
+        </div>
+      </div>
+    </section>
 
-    <!-- THEME -->
-    <div class="section">
-      <h3>🌍 Theme Implementation</h3>
-      <p>
-        Our app uses inflation tracking, spending analysis, and future projections
-        to help users make smarter financial decisions before prices rise.
-      </p>
-    </div>
+    <!-- QUICK LINKS CARD (optional) -->
+    <section class="resource-card">
+      <h1>🍓  𝐿𝒾𝓃𝓀𝓈  🍓 </h1>
+      <p>Here you can Email me, check out my Old Portfolio, and my Linkin</p>
 
-    <!-- WHY WE BUILT IT -->
-    <div class="section">
-      <h3>🧠 Why We Built This</h3>
-      <p>
-        We built SolidGround to make financial literacy simple, interactive,
-        and useful for people navigating an unpredictable economy.
-      </p>
-    </div>
+      <div class="skill-images">
+        <!-- Old portfolio -->
+        <a href="https://thomas-a-edison-cte-hs.github.io/elyssab4/" target="_blank" rel="noopener">
+          <div class="picture">
+            <img class="link-pic" src="file10.jpeg" alt="Old Portfolio" />
+          </div>
+        </a>
 
-    <!-- SLIDE DECK -->
-    <div class="section">
-      <h3>📽️ Slide Deck</h3>
+        <!-- Email -->
+        <a href="mailto:elyssab4@nycstudents.net" target="_blank" rel="noopener">
+          <div class="picture">
+            <img class="link-pic" src="mail8.png" alt="elyssab4@nycstudents.net" />
+          </div>
+        </a>
 
-      <!-- Replace with your real Google Slides embed link -->
-      <iframe
-        src="https://docs.google.com/presentation/d/e/2PACX-1vREALSLIDE/embed?start=false&loop=false&delayms=3000"
-        width="100%"
-        height="480"
-        frameborder="0"
-        allowfullscreen>
-      </iframe>
-    </div>
+        <!-- LinkedIn (or other) -->
+        <a href="https://www.linkedin.com/in/elyssa-burrell-49700a36a/" target="_blank" rel="noopener">
+          <div class="picture">
+            <img class="link-pic" src="linkin.png" alt="LinkedIn" />
+          </div>
+        </a>
+      </div>
+    </section>
 
-    <!-- FIGMA -->
-    <div class="section">
-      <h3>📱 Figma Prototype</h3>
+    <!-- PROJECTS SECTION (repeatable blocks) -->
+    <section class="resource-card">
+      <h2>Featuring Projects</h2>
+      <h3>𝐵𝑒𝓁𝑜𝓌 𝓎𝑜𝓊 𝓌𝒾𝓁𝓁 𝓈𝑒𝑒 𝑒𝒶𝒸𝒽 𝓅𝓇𝑜𝒿𝑒𝒸𝓉 𝓉𝒽𝒶𝓉 𝒾𝓈 𝑒𝓂𝒷𝑒𝒹𝒹𝑒𝒹 𝓌𝒾𝓉𝒽 𝑒𝓍𝓅𝓁𝒶𝓃𝒶𝓉𝒾𝑜𝓃𝓈 𝒶𝓃𝒹 𝓈𝓀𝒾𝓁𝓁𝓈, 𝓉𝒽𝒶𝓉 𝓌𝑒𝓇𝑒 𝓁𝑒𝒶𝓇𝓃𝑒𝒹 𝒶𝓁𝑜𝓃𝑔 𝓉𝒽𝑒 𝓌𝒶𝓎:</h3>
+    </section>
 
-      <!-- Replace with your real Figma embed link -->
-      <iframe
-        style="border:1px solid #ccc"
-        width="100%"
-        height="600"
-        src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/proto/YOUR-PROTOTYPE"
-        allowfullscreen>
-      </iframe>
-    </div>
+    <!-- PROJECT 1 -->
+    <section class="resource-card">
+      <div class="project">
+        <iframe class="game-iframe" src="https://py3.codeskulptor.org/#user311_vgYqHQF16SV1eTS.py" title="Cozy Functions Arcade"></iframe>
 
-    <!-- DEMO VIDEO -->
-    <div class="section">
-      <h3>🎥 Demo Video</h3>
+        <div class="reflection">
+          <h3>Cozy Functions Arcade</h3>
+          <p>
+            My project is meant to entertain users by using a bunch of games built by python, players can choose the game they want, select a difficulty level and try to get a high score. 
+            The problem this solves is when the user is bored you can play simple games with just one click! 
+            It’s perfect for people looking for a fun break without having to open so many tabs or for those who like to improve their problem solving skills or test them.
+          </p>
+          <p><strong>Skills:</strong> HTML, CSS, Python, SimpleGUI, importing random, Git
+</p>
+        </div>
+      </div>
+    </section>
 
-      <video width="80%" controls>
-        <source src="demo.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </div>
+    <!-- PROJECT 2 -->
+    <section class="resource-card">
+      <div class="project">
+        <iframe src="https://py3.codeskulptor.org/#user311_xF8UIwzvgRKykyq.py" title="Project 2"></iframe>
 
-  </div>
+        <div class="reflection">
+          <h3>Holiday drawing animation</h3>
+          <p>
+            This project is a drawing created using only circles. It helped me
+        understand shapes, coordinates, and visual layout. While simple,
+        it represents my early learning stage and shows my progression
+        toward more interactive projects.
+          </p>
+          <p><strong>Skills:</strong> Python, SimpleGUI, drawing, coordinates</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Add more projects by copying PROJECT blocks -->
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="resource-card">
+    <p>© <span id="year"></span> Elyssa's | Junior Fall Portfolio</p>
+  </footer>
+
+  <script>
+    // Auto-updates the year in the footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 
 </body>
-
 </html>
