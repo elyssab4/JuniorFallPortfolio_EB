@@ -9,7 +9,9 @@ html{
   scroll-behavior:smooth;
 }
 
-
+/* =========================
+   BODY (BLUE KAWAII THEME)
+========================= */
 
 body{
   font-family:'Poppins', sans-serif;
@@ -27,7 +29,6 @@ body{
   overflow-x:hidden;
   position:relative;
 }
-
 
 /* =========================
    WHITE FLOATING PARTICLES
@@ -56,7 +57,7 @@ body{
   bottom:-100px;
 
   background:
-  rgba(255,255,255,0.7);
+  rgba(255,255,255,0.75);
 
   border-radius:50%;
 
@@ -103,24 +104,40 @@ body{
   animation-duration:14s;
 }
 
-/* FLOAT ANIMATION */
-
 @keyframes floatUp{
-
   0%{
     transform:translateY(0);
     opacity:0;
   }
-
   10%{
     opacity:1;
   }
-
   100%{
     transform:translateY(-120vh);
     opacity:0;
   }
 }
+
+/* =========================
+   NAVBAR / TOP BORDER FIX
+========================= */
+
+header,
+.navbar{
+  border-bottom:2px solid rgba(255,255,255,0.7);
+  background:rgba(255,255,255,0.25);
+  backdrop-filter:blur(10px);
+}
+
+/* LINKS */
+a{
+  color:#1f3f66;
+}
+
+a:hover{
+  color:#2f8cff;
+}
+
 /* =========================
    HERO SECTION
 ========================= */
@@ -151,7 +168,7 @@ body{
   margin-bottom:35px;
 
   box-shadow:
-  0 15px 40px rgba(255,105,180,0.25);
+  0 15px 40px rgba(0,90,180,0.25);
 }
 
 .hero-text{
@@ -165,29 +182,29 @@ body{
   border-radius:35px;
 
   border:
-  2px solid rgba(255,182,193,0.55);
+  2px solid rgba(120,180,255,0.55);
 
   backdrop-filter:blur(12px);
 
   box-shadow:
-  0 10px 30px rgba(255,182,193,0.2);
+  0 10px 30px rgba(0,90,180,0.2);
 }
 
 .hero-text h1{
 
   font-size:4rem;
 
-  color:#ff4f93;
+  color:#1f5fa8;
 
   margin-bottom:20px;
 
   text-shadow:
-  2px 2px 0 white;
+  2px 2px 0 rgba(255,255,255,0.8);
 }
 
 .hero-text h2{
 
-  color:#573949;
+  color:#1f3f66;
 
   font-size:2rem;
 
@@ -202,16 +219,17 @@ body{
 
   line-height:1.9;
 
-  color:#4a2f3d;
+  color:#243447;
 
   margin-bottom:35px;
 }
 
+/* BUTTON */
 .hero-btn{
 
   display:inline-block;
 
-  background:#ff6fa9;
+  background:#4da6ff;
 
   color:white;
 
@@ -229,10 +247,8 @@ body{
 }
 
 .hero-btn:hover{
-
   transform:translateY(-5px);
-
-  background:#ff4f93;
+  background:#2f8cff;
 }
 
 /* =========================
@@ -245,12 +261,12 @@ body{
 
   font-size:3rem;
 
-  color:#ff4f93;
+  color:#1f5fa8;
 
   margin-bottom:70px;
 
   text-shadow:
-  2px 2px 0 white;
+  2px 2px 0 rgba(255,255,255,0.8);
 }
 
 /* =========================
@@ -267,7 +283,7 @@ body{
   background:rgba(255,255,255,0.7);
 
   border:
-  2px solid rgba(255,182,193,0.55);
+  2px solid rgba(120,180,255,0.5);
 
   border-radius:35px;
 
@@ -280,20 +296,16 @@ body{
   backdrop-filter:blur(12px);
 
   box-shadow:
-  0 10px 30px rgba(255,182,193,0.18);
+  0 10px 30px rgba(0,90,180,0.15);
 
   transition:0.3s;
 }
 
 .game-card:hover{
-
   transform:translateY(-8px);
 }
 
-
-/* =========================
-   GAME THUMBNAIL
-========================= */
+/* THUMBNAIL */
 
 .game-card img{
 
@@ -314,20 +326,16 @@ body{
   border-radius:20px;
 
   border:
-  2px solid rgba(255,182,193,0.4);
+  2px solid rgba(120,180,255,0.4);
 
   transition:0.3s ease;
 }
 
 .game-card img:hover{
-
   transform:scale(1.02);
 }
 
-
-/* =========================
-   GAME INFO
-========================= */
+/* GAME INFO */
 
 .game-info{
 
@@ -336,7 +344,7 @@ body{
 
 .game-info h2{
 
-  color:#ff4f93;
+  color:#1f5fa8;
 
   font-size:2rem;
 
@@ -345,7 +353,7 @@ body{
 
 .game-info p{
 
-  color:#4a2f3d;
+  color:#243447;
 
   line-height:1.9;
 
@@ -353,22 +361,18 @@ body{
 
   font-size:1.05rem;
 }
+
 /* =========================
    SKILLS
 ========================= */
-
-.skills{
-
-  margin-bottom:30px;
-}
 
 .skills span{
 
   display:inline-block;
 
-  background:#ffe0eb;
+  background:#d6ecff;
 
-  color:#c93c7b;
+  color:#1f4f7a;
 
   padding:10px 16px;
 
@@ -405,7 +409,7 @@ body{
 
 .play-btn{
 
-  background:#ff6fa9;
+  background:#4da6ff;
 
   color:white;
 
@@ -413,9 +417,7 @@ body{
 }
 
 .play-btn:hover{
-
-  background:#ff4f93;
-
+  background:#2f8cff;
   transform:translateY(-4px);
 }
 
@@ -423,14 +425,13 @@ body{
 
   background:white;
 
-  color:#ff4f93;
+  color:#2f8cff;
 
-  border:2px solid #ffb6cf;
+  border:2px solid #4da6ff;
 }
 
 .code-btn:hover{
-
-  background:#ffe4ef;
+  background:#e6f4ff;
 }
 
 /* =========================
@@ -446,14 +447,14 @@ body{
 
 .about-section h1{
 
-  color:#ff4f93;
+  color:#1f5fa8;
 
   font-size:3rem;
 
   margin-bottom:30px;
 
   text-shadow:
-  2px 2px 0 white;
+  2px 2px 0 rgba(255,255,255,0.8);
 }
 
 .about-section p{
@@ -464,7 +465,7 @@ body{
 
   line-height:1.9;
 
-  color:#4a2f3d;
+  color:#243447;
 
   background:rgba(255,255,255,0.6);
 
@@ -473,7 +474,7 @@ body{
   border-radius:30px;
 
   border:
-  2px solid rgba(255,182,193,0.5);
+  2px solid rgba(120,180,255,0.5);
 }
 
 /* =========================
@@ -489,14 +490,14 @@ body{
 
 .contact-section h1{
 
-  color:#ff4f93;
+  color:#1f5fa8;
 
   font-size:3rem;
 
   margin-bottom:35px;
 
   text-shadow:
-  2px 2px 0 white;
+  2px 2px 0 rgba(255,255,255,0.8);
 }
 
 .contact-links{
@@ -514,7 +515,7 @@ body{
 
   background:white;
 
-  color:#ff4f93;
+  color:#1f5fa8;
 
   padding:15px 28px;
 
@@ -525,15 +526,13 @@ body{
   font-weight:600;
 
   border:
-  2px solid rgba(255,182,193,0.45);
+  2px solid rgba(120,180,255,0.4);
 
   transition:0.3s;
 }
 
 .contact-links a:hover{
-
-  background:#ffe4ef;
-
+  background:#e6f4ff;
   transform:translateY(-5px);
 }
 
@@ -547,7 +546,7 @@ footer{
 
   padding:35px;
 
-  color:#7c5a68;
+  color:#2b3b4d;
 
   font-weight:500;
 }
@@ -569,5 +568,4 @@ footer{
   .nav-links{
     gap:15px;
   }
-
 }
