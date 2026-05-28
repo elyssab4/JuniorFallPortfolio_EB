@@ -403,3 +403,79 @@ footer{
   .hero-text h2{font-size:1.5rem;}
   .nav-links{gap:15px;}
 }
+
+/* =========================
+   FLOATING GLASS NAVBAR
+========================= */
+
+.glass-nav{
+  position:fixed;
+  top:20px;
+  left:50%;
+  transform:translateX(-50%);
+  width:90%;
+  max-width:1100px;
+
+  background:rgba(255,255,255,0.25);
+  backdrop-filter:blur(15px);
+
+  border:2px solid rgba(160,210,255,0.5);
+  border-radius:25px;
+
+  box-shadow:0 10px 30px rgba(120,180,255,0.25);
+
+  z-index:1000;
+}
+
+/* NAV LAYOUT */
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 25px;
+}
+
+/* LOGO */
+.logo{
+  font-size:1.3rem;
+  color:#4a86c5;
+  font-weight:700;
+}
+
+/* LINKS ROW (fix stacking issue) */
+.nav-links{
+  list-style:none;
+  display:flex;
+  gap:25px;
+  align-items:center;
+}
+
+/* REMOVE UNDERLINES */
+.nav-links a{
+  text-decoration:none;
+  color:#3b5f7a;
+  font-weight:600;
+  padding:8px 14px;
+  border-radius:12px;
+  transition:0.3s;
+}
+
+/* HOVER EFFECT */
+.nav-links a:hover{
+  background:rgba(143,200,255,0.25);
+  color:#4a86c5;
+}
+
+/* MOBILE FIX */
+@media(max-width:700px){
+  .navbar{
+    flex-direction:column;
+    gap:10px;
+  }
+
+  .nav-links{
+    gap:12px;
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+}
