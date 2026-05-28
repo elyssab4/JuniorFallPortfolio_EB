@@ -538,15 +538,9 @@ footer{
 
 /* animations */
 @keyframes waveMove{
-  0%{
-    transform:translateX(-10%) translateY(-5%);
-  }
-  50%{
-    transform:translateX(10%) translateY(5%);
-  }
-  100%{
-    transform:translateX(-10%) translateY(-5%);
-  }
+  0%{transform:translateX(-10%) translateY(-5%);}
+  50%{transform:translateX(10%) translateY(5%);}
+  100%{transform:translateX(-10%) translateY(-5%);}
 }
 
 @keyframes shine{
