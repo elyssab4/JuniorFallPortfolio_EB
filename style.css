@@ -327,13 +327,16 @@ body{
   transform:translateY(-8px);
 }
 
+
 /* =========================
    GAME THUMBNAIL
 ========================= */
 
 .game-card img{
 
-  width:80px;
+  width:100%;
+
+  max-width:350px;
 
   height:220px;
 
@@ -343,7 +346,11 @@ body{
 
   display:block;
 
-  border-bottom:
+  margin:auto;
+
+  border-radius:20px;
+
+  border:
   2px solid rgba(255,182,193,0.4);
 
   transition:0.3s ease;
@@ -353,6 +360,7 @@ body{
 
   transform:scale(1.02);
 }
+
 
 /* =========================
    GAME INFO
