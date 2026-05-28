@@ -1,4 +1,5 @@
 
+
 *{
   margin:0;
   padding:0;
@@ -10,21 +11,20 @@ html{
 }
 
 /* =========================
-   BODY (BLUE KAWAII THEME)
+   BODY (LIGHT KAWAII BLUE)
 ========================= */
 
 body{
   font-family:'Poppins', sans-serif;
 
-  background:
-  linear-gradient(
+  background: linear-gradient(
     180deg,
-    #b3dcff 0%,
-    #7fc4ff 50%,
-    #4da6ff 100%
+    #e3f2ff 0%,
+    #cfe9ff 50%,
+    #bfe0ff 100%
   );
 
-  color:#1f2f44;
+  color:#2a3b4d;
 
   overflow-x:hidden;
   position:relative;
@@ -56,18 +56,14 @@ body{
 
   bottom:-100px;
 
-  background:
-  rgba(255,255,255,0.75);
+  background:rgba(255,255,255,0.75);
 
   border-radius:50%;
 
   animation:floatUp linear infinite;
 
-  box-shadow:
-  0 0 12px rgba(255,255,255,0.8);
+  box-shadow:0 0 12px rgba(255,255,255,0.8);
 }
-
-/* PARTICLES */
 
 .particles span:nth-child(1){
   left:5%;
@@ -105,37 +101,29 @@ body{
 }
 
 @keyframes floatUp{
-  0%{
-    transform:translateY(0);
-    opacity:0;
-  }
-  10%{
-    opacity:1;
-  }
-  100%{
-    transform:translateY(-120vh);
-    opacity:0;
-  }
+  0%{transform:translateY(0); opacity:0;}
+  10%{opacity:1;}
+  100%{transform:translateY(-120vh); opacity:0;}
 }
 
 /* =========================
-   NAVBAR / TOP BORDER FIX
+   NAVBAR / TOP BORDER
 ========================= */
 
 header,
 .navbar{
-  border-bottom:2px solid rgba(255,255,255,0.7);
+  border-bottom:2px solid rgba(180,220,255,0.7);
   background:rgba(255,255,255,0.25);
   backdrop-filter:blur(10px);
 }
 
 /* LINKS */
 a{
-  color:#1f3f66;
+  color:#3b5f7a;
 }
 
 a:hover{
-  color:#2f8cff;
+  color:#6fb8ff;
 }
 
 /* =========================
@@ -143,7 +131,6 @@ a:hover{
 ========================= */
 
 .hero{
-
   min-height:100vh;
 
   display:flex;
@@ -158,7 +145,6 @@ a:hover{
 }
 
 .hero-image img{
-
   width:260px;
 
   border-radius:30px;
@@ -167,12 +153,10 @@ a:hover{
 
   margin-bottom:35px;
 
-  box-shadow:
-  0 15px 40px rgba(0,90,180,0.25);
+  box-shadow:0 15px 40px rgba(120,180,255,0.25);
 }
 
 .hero-text{
-
   max-width:800px;
 
   background:rgba(255,255,255,0.65);
@@ -181,30 +165,25 @@ a:hover{
 
   border-radius:35px;
 
-  border:
-  2px solid rgba(120,180,255,0.55);
+  border:2px solid rgba(160,210,255,0.6);
 
   backdrop-filter:blur(12px);
 
-  box-shadow:
-  0 10px 30px rgba(0,90,180,0.2);
+  box-shadow:0 10px 30px rgba(120,180,255,0.2);
 }
 
 .hero-text h1{
-
   font-size:4rem;
 
-  color:#1f5fa8;
+  color:#4a86c5;
 
   margin-bottom:20px;
 
-  text-shadow:
-  2px 2px 0 rgba(255,255,255,0.8);
+  text-shadow:1px 1px 0 rgba(255,255,255,0.8);
 }
 
 .hero-text h2{
-
-  color:#1f3f66;
+  color:#3b5f7a;
 
   font-size:2rem;
 
@@ -214,22 +193,20 @@ a:hover{
 }
 
 .hero-text p{
-
   font-size:1.1rem;
 
   line-height:1.9;
 
-  color:#243447;
+  color:#2a3b4d;
 
   margin-bottom:35px;
 }
 
-/* BUTTON */
+/* BUTTONS */
 .hero-btn{
-
   display:inline-block;
 
-  background:#4da6ff;
+  background:#8fc8ff;
 
   color:white;
 
@@ -248,7 +225,7 @@ a:hover{
 
 .hero-btn:hover{
   transform:translateY(-5px);
-  background:#2f8cff;
+  background:#6fb8ff;
 }
 
 /* =========================
@@ -256,17 +233,15 @@ a:hover{
 ========================= */
 
 .section-title{
-
   text-align:center;
 
   font-size:3rem;
 
-  color:#1f5fa8;
+  color:#4a86c5;
 
   margin-bottom:70px;
 
-  text-shadow:
-  2px 2px 0 rgba(255,255,255,0.8);
+  text-shadow:1px 1px 0 rgba(255,255,255,0.8);
 }
 
 /* =========================
@@ -274,16 +249,13 @@ a:hover{
 ========================= */
 
 .games-section{
-
   padding:100px 8%;
 }
 
 .game-card{
-
   background:rgba(255,255,255,0.7);
 
-  border:
-  2px solid rgba(120,180,255,0.5);
+  border:2px solid rgba(160,210,255,0.5);
 
   border-radius:35px;
 
@@ -295,8 +267,7 @@ a:hover{
 
   backdrop-filter:blur(12px);
 
-  box-shadow:
-  0 10px 30px rgba(0,90,180,0.15);
+  box-shadow:0 10px 30px rgba(120,180,255,0.15);
 
   transition:0.3s;
 }
@@ -306,9 +277,7 @@ a:hover{
 }
 
 /* THUMBNAIL */
-
 .game-card img{
-
   width:100%;
 
   max-width:350px;
@@ -325,8 +294,7 @@ a:hover{
 
   border-radius:20px;
 
-  border:
-  2px solid rgba(120,180,255,0.4);
+  border:2px solid rgba(160,210,255,0.4);
 
   transition:0.3s ease;
 }
@@ -336,15 +304,12 @@ a:hover{
 }
 
 /* GAME INFO */
-
 .game-info{
-
   padding:45px;
 }
 
 .game-info h2{
-
-  color:#1f5fa8;
+  color:#4a86c5;
 
   font-size:2rem;
 
@@ -352,8 +317,7 @@ a:hover{
 }
 
 .game-info p{
-
-  color:#243447;
+  color:#2a3b4d;
 
   line-height:1.9;
 
@@ -366,13 +330,16 @@ a:hover{
    SKILLS
 ========================= */
 
-.skills span{
+.skills{
+  margin-bottom:30px;
+}
 
+.skills span{
   display:inline-block;
 
-  background:#d6ecff;
+  background:#dff1ff;
 
-  color:#1f4f7a;
+  color:#3b5f7a;
 
   padding:10px 16px;
 
@@ -391,7 +358,6 @@ a:hover{
 
 .play-btn,
 .code-btn{
-
   display:inline-block;
 
   padding:14px 24px;
@@ -408,8 +374,7 @@ a:hover{
 }
 
 .play-btn{
-
-  background:#4da6ff;
+  background:#8fc8ff;
 
   color:white;
 
@@ -417,17 +382,16 @@ a:hover{
 }
 
 .play-btn:hover{
-  background:#2f8cff;
+  background:#6fb8ff;
   transform:translateY(-4px);
 }
 
 .code-btn{
-
   background:white;
 
-  color:#2f8cff;
+  color:#4a86c5;
 
-  border:2px solid #4da6ff;
+  border:2px solid #8fc8ff;
 }
 
 .code-btn:hover{
@@ -439,33 +403,29 @@ a:hover{
 ========================= */
 
 .about-section{
-
   padding:100px 8%;
 
   text-align:center;
 }
 
 .about-section h1{
-
-  color:#1f5fa8;
+  color:#4a86c5;
 
   font-size:3rem;
 
   margin-bottom:30px;
 
-  text-shadow:
-  2px 2px 0 rgba(255,255,255,0.8);
+  text-shadow:1px 1px 0 rgba(255,255,255,0.8);
 }
 
 .about-section p{
-
   max-width:800px;
 
   margin:auto;
 
   line-height:1.9;
 
-  color:#243447;
+  color:#2a3b4d;
 
   background:rgba(255,255,255,0.6);
 
@@ -473,8 +433,7 @@ a:hover{
 
   border-radius:30px;
 
-  border:
-  2px solid rgba(120,180,255,0.5);
+  border:2px solid rgba(160,210,255,0.5);
 }
 
 /* =========================
@@ -482,26 +441,22 @@ a:hover{
 ========================= */
 
 .contact-section{
-
   padding:100px 8%;
 
   text-align:center;
 }
 
 .contact-section h1{
-
-  color:#1f5fa8;
+  color:#4a86c5;
 
   font-size:3rem;
 
   margin-bottom:35px;
 
-  text-shadow:
-  2px 2px 0 rgba(255,255,255,0.8);
+  text-shadow:1px 1px 0 rgba(255,255,255,0.8);
 }
 
 .contact-links{
-
   display:flex;
 
   justify-content:center;
@@ -512,10 +467,9 @@ a:hover{
 }
 
 .contact-links a{
-
   background:white;
 
-  color:#1f5fa8;
+  color:#4a86c5;
 
   padding:15px 28px;
 
@@ -525,8 +479,7 @@ a:hover{
 
   font-weight:600;
 
-  border:
-  2px solid rgba(120,180,255,0.4);
+  border:2px solid rgba(160,210,255,0.4);
 
   transition:0.3s;
 }
@@ -541,12 +494,11 @@ a:hover{
 ========================= */
 
 footer{
-
   text-align:center;
 
   padding:35px;
 
-  color:#2b3b4d;
+  color:#3b4f63;
 
   font-weight:500;
 }
@@ -556,7 +508,6 @@ footer{
 ========================= */
 
 @media(max-width:900px){
-
   .hero-text h1{
     font-size:2.8rem;
   }
