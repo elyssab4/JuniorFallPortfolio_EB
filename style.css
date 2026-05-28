@@ -10,18 +10,19 @@ html{
 }
 
 
+
 body{
   font-family:'Poppins', sans-serif;
 
   background:
   linear-gradient(
     180deg,
-    #dceeff 0%,
-    #c7e3ff 50%,
-    #b5d8ff 100%
+    #b3dcff 0%,
+    #7fc4ff 50%,
+    #4da6ff 100%
   );
 
-  color:#2d3a4d;
+  color:#1f2f44;
 
   overflow-x:hidden;
   position:relative;
