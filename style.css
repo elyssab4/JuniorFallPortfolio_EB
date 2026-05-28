@@ -1,5 +1,3 @@
-```css id="fullcss"
-/* RESET */
 
 *{
   margin:0;
@@ -13,12 +11,21 @@ html{
 
 body{
   font-family:'Poppins', sans-serif;
-  background:#0f0f14;
-  color:white;
+  background:linear-gradient(
+    180deg,
+    #fff0f6 0%,
+    #ffe4ef 50%,
+    #ffd8ea 100%
+  );
+
+  color:#4a3a45;
   overflow-x:hidden;
+  position:relative;
 }
 
-/* FLOATING PARTICLES */
+/* =========================
+   FLOATING PARTICLES
+========================= */
 
 .particles{
   position:fixed;
@@ -33,105 +40,68 @@ body{
 
 .particles span{
   position:absolute;
-  bottom:-120px;
-  background:rgba(255, 158, 207, 0.25);
+  bottom:-100px;
+  background:rgba(255,182,193,0.35);
   border-radius:50%;
   animation:floatUp linear infinite;
-  box-shadow:0 0 15px rgba(255,158,207,0.5);
+  filter:blur(1px);
 }
 
-/* INDIVIDUAL PARTICLES */
+/* particle sizes */
 
 .particles span:nth-child(1){
   left:5%;
-  width:20px;
-  height:20px;
+  width:18px;
+  height:18px;
   animation-duration:12s;
 }
 
 .particles span:nth-child(2){
   left:15%;
-  width:35px;
-  height:35px;
+  width:28px;
+  height:28px;
   animation-duration:18s;
 }
 
 .particles span:nth-child(3){
-  left:25%;
-  width:15px;
-  height:15px;
+  left:30%;
+  width:14px;
+  height:14px;
   animation-duration:10s;
 }
 
 .particles span:nth-child(4){
-  left:35%;
-  width:45px;
-  height:45px;
+  left:45%;
+  width:36px;
+  height:36px;
   animation-duration:20s;
 }
 
 .particles span:nth-child(5){
-  left:50%;
-  width:25px;
-  height:25px;
-  animation-duration:14s;
+  left:60%;
+  width:20px;
+  height:20px;
+  animation-duration:15s;
 }
 
 .particles span:nth-child(6){
-  left:60%;
-  width:18px;
-  height:18px;
-  animation-duration:16s;
-}
-
-.particles span:nth-child(7){
-  left:70%;
-  width:50px;
-  height:50px;
+  left:75%;
+  width:30px;
+  height:30px;
   animation-duration:22s;
 }
 
-.particles span:nth-child(8){
-  left:80%;
-  width:22px;
-  height:22px;
-  animation-duration:13s;
-}
-
-.particles span:nth-child(9){
+.particles span:nth-child(7){
   left:90%;
-  width:30px;
-  height:30px;
-  animation-duration:17s;
-}
-
-.particles span:nth-child(10){
-  left:40%;
-  width:12px;
-  height:12px;
-  animation-duration:9s;
-}
-
-.particles span:nth-child(11){
-  left:55%;
-  width:40px;
-  height:40px;
-  animation-duration:19s;
-}
-
-.particles span:nth-child(12){
-  left:75%;
   width:16px;
   height:16px;
   animation-duration:11s;
 }
 
-/* ANIMATION */
-
 @keyframes floatUp{
 
   0%{
-    transform:translateY(0) scale(1);
+    transform:translateY(0);
     opacity:0;
   }
 
@@ -140,55 +110,70 @@ body{
   }
 
   100%{
-    transform:translateY(-120vh) scale(1.4);
+    transform:translateY(-120vh);
     opacity:0;
   }
 }
 
-/* NAVBAR */
+/* =========================
+   NAVBAR
+========================= */
 
 .navbar{
   display:flex;
   justify-content:space-between;
   align-items:center;
+
   padding:20px 8%;
-  background:rgba(17,17,17,0.8);
-  backdrop-filter:blur(10px);
+
+  background:rgba(255,255,255,0.65);
+  backdrop-filter:blur(12px);
+
   position:sticky;
   top:0;
+
+  border-bottom:1px solid rgba(255,255,255,0.5);
+
   z-index:1000;
 }
 
 .logo{
-  color:#ff9ecf;
+  color:#ff6fa9;
   font-size:2rem;
+  font-weight:700;
 }
 
 .nav-links{
   display:flex;
-  list-style:none;
   gap:30px;
+  list-style:none;
 }
 
 .nav-links a{
   text-decoration:none;
-  color:white;
+  color:#5c4b56;
+  font-weight:500;
   transition:0.3s;
 }
 
 .nav-links a:hover{
-  color:#ff9ecf;
+  color:#ff6fa9;
 }
 
-/* HERO */
+/* =========================
+   HERO SECTION
+========================= */
 
 .hero{
   min-height:100vh;
+
   display:flex;
-  justify-content:space-between;
   align-items:center;
+  justify-content:space-between;
+
+  gap:60px;
+
   padding:80px 8%;
-  gap:50px;
 }
 
 .hero-text{
@@ -197,70 +182,112 @@ body{
 
 .hero-text h1{
   font-size:4rem;
+  color:#ff6fa9;
+
   margin-bottom:20px;
 }
 
 .hero-text h2{
-  color:#ff9ecf;
-  margin-bottom:20px;
+  font-size:2rem;
+  color:#6b5663;
+
+  margin-bottom:25px;
+
+  line-height:1.3;
 }
 
 .hero-text p{
-  line-height:1.8;
-  color:#d0d0d0;
-  margin-bottom:30px;
+  font-size:1.05rem;
+  line-height:1.9;
+
+  color:#6b5663;
+
+  max-width:600px;
+
+  margin-bottom:35px;
 }
 
 .hero-btn{
   display:inline-block;
-  background:#ff9ecf;
-  color:black;
-  padding:15px 30px;
-  border-radius:12px;
+
+  background:#ff8db8;
+  color:white;
+
+  padding:16px 32px;
+
+  border-radius:18px;
+
   text-decoration:none;
   font-weight:600;
+
+  box-shadow:0 10px 25px rgba(255,111,169,0.25);
+
   transition:0.3s;
 }
 
 .hero-btn:hover{
   transform:translateY(-5px);
+  background:#ff6fa9;
 }
 
 .hero-image img{
-  width:350px;
-  border-radius:20px;
-  border:4px solid #ff9ecf;
-  box-shadow:0 0 30px rgba(255,158,207,0.5);
+  width:340px;
+
+  border-radius:30px;
+
+  box-shadow:
+    0 20px 40px rgba(255,111,169,0.18);
+
+  border:6px solid white;
 }
 
-/* GAMES */
+/* =========================
+   SECTION TITLE
+========================= */
+
+.section-title{
+  text-align:center;
+
+  font-size:3rem;
+
+  color:#ff6fa9;
+
+  margin-bottom:70px;
+}
+
+/* =========================
+   GAMES SECTION
+========================= */
 
 .games-section{
   padding:100px 8%;
 }
 
-.section-title{
-  text-align:center;
-  margin-bottom:60px;
-  font-size:3rem;
-}
-
 .game-card{
   display:flex;
-  background:#1b1b25;
-  margin-bottom:50px;
-  border-radius:20px;
-  overflow:hidden;
-  transition:0.3s;
+
+  background:rgba(255,255,255,0.7);
+
   backdrop-filter:blur(10px);
+
+  border-radius:28px;
+
+  overflow:hidden;
+
+  margin-bottom:50px;
+
+  box-shadow:
+    0 10px 30px rgba(255,182,193,0.18);
+
+  transition:0.3s;
 }
 
 .game-card:hover{
-  transform:translateY(-10px);
+  transform:translateY(-8px);
 }
 
 .game-card img{
-  width:400px;
+  width:380px;
   object-fit:cover;
 }
 
@@ -269,126 +296,193 @@ body{
 }
 
 .game-info h2{
-  color:#ff9ecf;
-  margin-bottom:20px;
+  color:#ff6fa9;
+
+  margin-bottom:18px;
+
+  font-size:2rem;
 }
 
 .game-info p{
-  line-height:1.8;
-  color:#d0d0d0;
+  line-height:1.9;
+
+  color:#5c4b56;
+
+  margin-bottom:25px;
 }
 
+/* =========================
+   SKILLS
+========================= */
+
 .skills{
-  margin:25px 0;
+  margin-bottom:25px;
 }
 
 .skills span{
   display:inline-block;
-  background:#2b2b39;
-  padding:10px 15px;
-  border-radius:20px;
+
+  background:#ffe1ec;
+
+  color:#ff6fa9;
+
+  padding:10px 16px;
+
+  border-radius:999px;
+
   margin-right:10px;
   margin-bottom:10px;
+
+  font-size:0.95rem;
 }
 
-.buttons{
-  margin-top:20px;
-}
+/* =========================
+   BUTTONS
+========================= */
 
 .play-btn,
 .code-btn{
   display:inline-block;
-  padding:12px 20px;
-  border-radius:10px;
+
+  padding:13px 22px;
+
+  border-radius:14px;
+
   text-decoration:none;
-  margin-right:15px;
+
+  font-weight:600;
+
   transition:0.3s;
+
+  margin-right:15px;
 }
 
 .play-btn{
-  background:#ff9ecf;
-  color:black;
+  background:#ff8db8;
+  color:white;
 }
 
 .play-btn:hover{
-  transform:scale(1.05);
+  background:#ff6fa9;
+  transform:translateY(-4px);
 }
 
 .code-btn{
-  border:2px solid #ff9ecf;
-  color:#ff9ecf;
+  background:white;
+  color:#ff6fa9;
+
+  border:2px solid #ffb6cf;
 }
 
 .code-btn:hover{
-  background:#ff9ecf;
-  color:black;
+  background:#ffe1ec;
 }
 
-/* ABOUT */
+/* =========================
+   ABOUT SECTION
+========================= */
 
 .about-section{
   padding:100px 8%;
+
   text-align:center;
 }
 
 .about-section h1{
-  margin-bottom:30px;
   font-size:3rem;
+
+  color:#ff6fa9;
+
+  margin-bottom:30px;
 }
 
 .about-section p{
-  max-width:700px;
+  max-width:750px;
+
   margin:auto;
-  line-height:1.8;
-  color:#d0d0d0;
+
+  line-height:1.9;
+
+  color:#5c4b56;
 }
 
-/* CONTACT */
+/* =========================
+   CONTACT
+========================= */
 
 .contact-section{
   padding:100px 8%;
+
   text-align:center;
 }
 
 .contact-section h1{
-  margin-bottom:30px;
   font-size:3rem;
+
+  color:#ff6fa9;
+
+  margin-bottom:30px;
 }
 
 .contact-links{
   display:flex;
   justify-content:center;
-  gap:30px;
+  gap:25px;
+
   flex-wrap:wrap;
 }
 
 .contact-links a{
-  color:#ff9ecf;
   text-decoration:none;
-  font-size:1.2rem;
+
+  background:white;
+
+  color:#ff6fa9;
+
+  padding:14px 24px;
+
+  border-radius:16px;
+
+  box-shadow:
+    0 8px 20px rgba(255,182,193,0.15);
+
   transition:0.3s;
 }
 
 .contact-links a:hover{
   transform:translateY(-5px);
+  background:#ffe1ec;
 }
 
-/* FOOTER */
+/* =========================
+   FOOTER
+========================= */
 
 footer{
   text-align:center;
+
   padding:30px;
-  background:#111;
-  color:#999;
+
+  color:#8a7280;
 }
 
-/* MOBILE */
+/* =========================
+   MOBILE
+========================= */
 
 @media(max-width:900px){
 
   .hero{
     flex-direction:column;
     text-align:center;
+  }
+
+  .hero-text h1{
+    font-size:3rem;
+  }
+
+  .hero-text h2{
+    font-size:1.5rem;
   }
 
   .game-card{
@@ -400,7 +494,7 @@ footer{
   }
 
   .hero-image img{
-    width:250px;
+    width:240px;
   }
 
   .nav-links{
