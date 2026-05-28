@@ -502,7 +502,37 @@ footer{
   overflow:hidden;
 }
 
-/* 🌊 REAL WATER WAVE LAYER */
+/* =========================
+   🌊 FLOATING GLASS NAVBAR (VISIBLE WATER EFFECT)
+========================= */
+
+.glass-nav{
+  position:fixed;
+  top:20px;
+  left:50%;
+  transform:translateX(-50%);
+  width:90%;
+  max-width:1100px;
+
+  background:rgba(255,255,255,0.25);
+  backdrop-filter:blur(15px) saturate(180%);
+
+  border:2px solid rgba(160,210,255,0.6);
+  border-radius:25px;
+
+  box-shadow:0 10px 30px rgba(120,180,255,0.25);
+
+  overflow:hidden;
+  z-index:1000;
+}
+
+/* NAV CONTENT ABOVE EFFECTS */
+.navbar{
+  position:relative;
+  z-index:2;
+}
+
+/* WAVE LAYER */
 .glass-nav::before{
   content:"";
   position:absolute;
@@ -510,15 +540,15 @@ footer{
   z-index:0;
 
   background:
-    radial-gradient(circle at 20% 30%, rgba(120,180,255,0.45), transparent 45%),
-    radial-gradient(circle at 70% 60%, rgba(180,220,255,0.55), transparent 50%),
-    radial-gradient(circle at 40% 80%, rgba(255,255,255,0.35), transparent 55%);
+    radial-gradient(circle at 20% 30%, rgba(120,180,255,0.75), transparent 45%),
+    radial-gradient(circle at 70% 60%, rgba(180,220,255,0.85), transparent 50%),
+    radial-gradient(circle at 40% 80%, rgba(255,255,255,0.5), transparent 55%);
 
-  filter: blur(10px) saturate(160%);
+  filter: blur(12px) saturate(180%);
   animation: waveMove 4s ease-in-out infinite alternate;
 }
 
-/* subtle shimmer line */
+/* SHIMMER LIGHT */
 .glass-nav::after{
   content:"";
   position:absolute;
@@ -526,25 +556,33 @@ footer{
   left:-60%;
   width:60%;
   height:100%;
+  z-index:0;
 
   background:linear-gradient(
     120deg,
     transparent,
-    rgba(255,255,255,0.35),
+    rgba(255,255,255,0.45),
     transparent
   );
 
-  animation:shine 5s linear infinite;
+  animation: shine 4s linear infinite;
 }
 
-/* animations */
+/* ANIMATIONS */
 @keyframes waveMove{
-  0%{transform:translateX(-10%) translateY(-5%);}
-  50%{transform:translateX(10%) translateY(5%);}
-  100%{transform:translateX(-10%) translateY(-5%);}
+  0%{
+    transform:translateX(-12%) translateY(-6%);
+  }
+  100%{
+    transform:translateX(12%) translateY(6%);
+  }
 }
 
 @keyframes shine{
-  0%{transform:translateX(-100%);}
-  100%{transform:translateX(250%);}
+  0%{
+    transform:translateX(-120%);
+  }
+  100%{
+    transform:translateX(250%);
+  }
 }
