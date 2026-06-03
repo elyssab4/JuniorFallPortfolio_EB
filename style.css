@@ -65,7 +65,7 @@ body{
 }
 
 /* =========================
-   NAVBAR (FIXED)
+   NAVBAR
 ========================= */
 
 header,
@@ -83,7 +83,7 @@ header,
   padding:18px 40px;
 }
 
-/* NAV LINKS ROW FIX */
+/* NAV LINKS ROW */
 .nav-links{
   display:flex;
   flex-direction:row;
@@ -93,7 +93,7 @@ header,
   padding:0;
 }
 
-/* CLEAN NAV TEXT (NO LINK LOOK) */
+/* NAV TEXT*/
 .nav-links li a{
   text-decoration:none;
   color:#3b5f7a;
@@ -115,7 +115,7 @@ header,
 }
 
 /* =========================
-   GLOBAL LINKS (non-nav)
+   GLOBAL LINKS
 ========================= */
 
 a{
