@@ -9,7 +9,7 @@ html{
 }
 
 /* =========================
-   BODY (LIGHT KAWAII BLUE)
+   BODY LIGHT BLUE
 ========================= */
 
 body{
@@ -442,7 +442,7 @@ footer{
   font-weight:700;
 }
 
-/* LINKS ROW (fix stacking issue) */
+/* LINKS ROW*/
 .nav-links{
   list-style:none;
   display:flex;
@@ -503,7 +503,7 @@ footer{
 }
 
 /* =========================
-   🌊 FLOATING GLASS NAVBAR (VISIBLE WATER EFFECT)
+   FLOATING GLASS NAVBAR WATER EFFECT
 ========================= */
 
 .glass-nav{
